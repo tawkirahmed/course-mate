@@ -1,0 +1,21 @@
+.print-block{display:block}
+.print-inline{display:inline}
+#sitenav,.fubar,clearfix:after,.tumfooter,div.sitefooter ul,.dont-print,.csc-linkToTop{display:none}
+#normal{margin:0}
+#sidebar,#content{float:none;width:100%;margin:0}
+.belt{width:100%;max-width:none;padding:0}
+#sidebar{border-top:1px solid black}
+.org .home{margin:0}
+.org .home span{display:inline}
+.org .home span:after{content:', '}
+.org .home span:last-child:after{content:''}
+body,a,.org .home a,.breadcrumbs li a,.breadcrumbs li strong,#page-body,#sidebar aside>div{background-color:transparent;color:black;border-color:black}
+.no-printextras a:after{content:' ('attr(href)')';font-size:small}
+.no-printextras a[href^='/']:after,.no-printextras a[href^='ftp://']:after,.no-printextras a[href^='mailto:']:after{content:" ["attr(href)"]"}
+.breadcrumbs.inline li{background-image:none}
+.breadcrumbs a:after{content:' >'}
+header a:after{content:''}
+#pfooter{min-height:100px;
+}
+#pfooter img{float:right;page-break-inside:avoid}
+ol.urllist{font-size:75%;word-wrap:break-word}
